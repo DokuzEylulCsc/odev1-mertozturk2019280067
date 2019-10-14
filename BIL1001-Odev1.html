@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
+ <head>
+    <title>Mert ÖZTÜRK 2019280067</title>
+  </head>
+<h2>Mert ÖZTÜRK - 2019280067</h2>
 <h2>2019 Güz Döneminin ilk ödevi</h2>
 <label for="id1">Metin kutusu 1</label>
-<input type='text' id='id1' /> 
+<input type='text' id='id1' onkeypress="return event.charCode>= 48 &&event.charCode<= 57" /> 
 <br>
 <label for="id2">Metin kutusu 2</label>
-<input type='text' id='id2' /> 
+<input type='text' id='id2' onkeypress="return event.charCode>= 48 &&event.charCode<= 57" /> 
 <br><br>
-<button type="button">Topla</button>
+<button type="button" id="toplama" onclick='alert(parseInt(document.getElementById("id1").value) + parseInt(document.getElementById("id2").value))'>Topla</button>
 <br><br>
 <label for="id3">Metin kutusu 3</label>
 <input type='text' id='id3' /> 
@@ -16,6 +20,6 @@
 <label for="id4">Metin kutusu 4</label>
 <input type='text' id='id4' /> 
 <br><br>
-<button type="button">Yapýþtýr</button>
+<button type="button" id="yapistir" onclick='alert(document.getElementById("id3").value + " " + document.getElementById("id4").value)'>Yapýþtýr</button>
 </body>
 </html>
